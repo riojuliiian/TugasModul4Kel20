@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: ‘Open Sans’, Helvetica;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  
+}
+.container {
+ 
+   width: 870px;
+   height: 450px; 
+  margin-top: 120px ;
+  margin-bottom: 100px;
+  margin-left: 150px;
+  top : 50%;
+  bottom : 50%;
+ 
+ 
+}
+.container .usercard-btn.home{
+  margin-right: 130px;
+  width: 60px;
+  height: 40px;
+}
+.container .titletext{
+  text-align: center;
+  font-size: 40px;
+  margin-right: 110px;
+}
+.container .row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin: 0px;
+}
+.container .row .col {
+  margin: 10px;
+  felx-grow: 1;
+}
+@media screen and (max-width: 900px) {
+  .container .row {
+    flex-direction: column;
+  }
+}
+.usercard {
+  background: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-basis: 0;
+  min-height: 250px;
+  max-height: 300px;
+  max-width: 380px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+  border-radius: 10px;
+}
+.usercard .usercard-avatar {
+  position: relative;
+  width: 50%;
+  z-index: 49;
+  overflow: hidden;
+}
+.usercard .usercard-avatar .usercard-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s;
+}
+.usercard .usercard-avatar:after {
+  content: ”;
+  position: absolute;
+  right: -16%;
+  top: 0;
+  transform: skewx(-10deg);
+  height: 100%;
+  width: 20%;
+  min-width: 90px;
+  background: #fff;
+}
+.usercard .usercard-body {
+  position: relative;
+  width: 50%;
+  padding: 40px 10px 20px;
+}
+.usercard .usercard-body .usercard-title {
+  font-size: 25px;
+  margin-bottom: 6px;
+}
+.usercard .usercard-body .usercard-badge {
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  background: rgba(53, 70, 92, 0.1);
+  color: #35465c;
+  margin: 4px 0;
+  display: inline-block;
+}
+.usercard .usercard-body .usercard-btn-container {
+  margin: 15px 0;
+}
+.usercard .usercard-body .usercard-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  opacity: .9;
+}
+.usercard .usercard-body .usercard-btn:active {
+  opacity: 1;
+}
+.usercard .usercard-body .usercard-btn.github {
+  background: #35465c;
+}
+.usercard .usercard-body .usercard-btn.facebook {
+  background: #4427e9;
+}
+.usercard .usercard-body .usercard-btn.instagram {
+  background: #517fa4;
+}
+.usercard .usercard-body .usercard-btn.twitter {
+  background: #55acee;
+}
+.usercard .usercard-body .usercard-btn.home {
+  background: #040308;
+ 
+}
+.usercard:hover .usercard-img {
+  transform: scale(1.1) rotate(4deg);
+}
